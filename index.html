@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+ <script>
+    // Function to detect if the user is on a mobile phone
+    function isMobilePhone() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    // Automatically redirect to the tel: link if the user is on a mobile phone
+    if (isMobilePhone()) {
+      window.location.href = "tel:+18339922498”; // Replace with your phone number
+    }
+  </script>
+
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11548868062"></script>
 <script>
